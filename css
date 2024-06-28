@@ -5,7 +5,6 @@
   padding: 20px;
   justify-content: space-around;
   align-items: center; /* 수평 중앙 정렬 */
-  width: 100%; /* 부모 컨테이너 전체 너비 사용 */
 }
 
 .name {
@@ -13,13 +12,6 @@
   flex-direction: column;
   align-items: center; /* 수평 중앙 정렬 */
   text-align: center; /* 텍스트 가운데 정렬 */
-  width: 100%; /* 부모 컨테이너 전체 너비 사용 */
-}
-
-.name h3 {
-  align-self: flex-start; /* name 클래스의 h3 요소를 왼쪽 정렬 */
-  margin: 0; /* 기본 마진 제거 */
-  width: 100%; /* 부모 요소 전체 너비 사용 */
 }
 
 .box {
@@ -35,26 +27,13 @@
 }
 
 h3 {
-  text-align: left; /* 모든 h3 요소를 왼쪽 정렬 */
-  width: 100%; /* 부모 요소 전체 너비 사용 */
-  margin: 0; /* 기본 마진 제거 */
-}
-
-button {
-  width: 134px;
-  height: 57px;
-  background-color: #ffffff;
-  border-radius: 10%;
-  border: 0;
-  color: #878787;
-  margin-top: 20px; /* 버튼 위에 여백 추가 */
+  text-align: left; /* 모바일에서 텍스트 왼쪽 정렬 */
 }
 
 .itemContainer {
   display: flex;
   flex-direction: column;
   gap: 10px; /* 섹션 간의 간격 추가 */
-  width: 100%; /* 부모 컨테이너 전체 너비 사용 */
 }
 
 .section {
