@@ -1,66 +1,81 @@
-.purchaseContainer {
+.roomContainer {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ebebeb;
   padding: 20px;
-  justify-content: space-around;
-  align-items: center; /* 수평 중앙 정렬 */
-}
-
-.name {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 수평 중앙 정렬 */
-  text-align: center; /* 텍스트 가운데 정렬 */
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 수평 중앙 정렬 */
-  justify-content: center; /* 수직 중앙 정렬 */
-  margin: 10px; /* 모바일에서 마진 설정 */
-  padding: 10px; /* 내부 패딩 추가 */
-  border-radius: 10px;
-  background-color: #45bc53;
-  color: #ffffff;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 h3 {
-  text-align: left; /* 모바일에서 텍스트 왼쪽 정렬 */
+  align-self: flex-start;
+  margin: 0;
 }
 
-.itemContainer {
+.roomDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+  border: 1.5px solid transparent;
+  border-radius: 10px;
+  width: 80%;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #45bc53, #205626);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.room {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* 섹션 간의 간격 추가 */
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+  margin: 5px;
+  background-color: #ffffff;
+  font-size: 10px;
+  font-weight: bolder;
+  /* box-sizing: border-box; */
+
+  cursor: "pointer";
+}
+.buying,
+.people,
+.date {
+  margin: 5px 0;
+}
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: #45bc53;
 }
 
-.section {
+.buttonDiv {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 10px; /* 모바일에서 마진 설정 */
-}
-
-.category {
-  display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: center; /* 중앙 정렬 추가 */
-  margin: 5px; /* 여백 추가 */
-  flex: 1 1 calc(33.333% - 10px); /* 모바일에서 한 줄에 3개씩 배치 */
-  max-width: calc(33.333% - 10px); /* 모바일에서 한 줄에 3개씩 배치 */
-  box-sizing: border-box; /* 패딩과 경계 너비를 포함하여 크기 계산 */
+  align-items: center;
+  margin-top: 50px;
 }
-
-.item {
-  width: 70px; /* 모바일에서 작은 아이템 크기 */
-  height: 70px;
-  border: 1px solid black;
-  border-radius: 50%;
+.btn {
+  margin: 10px;
+  border: 1px solid #45bc53;
+  padding: 20px;
+  width: 30%;
+  font-weight: bolder;
+  text-decoration-line: none;
+  color: #45bc53;
 }
-
-.itemName {
-  font-size: small;
-  text-align: center;
+.btn:hover {
+  background-color: #45bc53;
+  opacity: 0.5;
+  color: white;
+  cursor: pointer;
 }
